@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { ArrowRightCircle } from 'react-bootstrap-icons'
 import HeaderImg from '../assets/images/headerIcon.svg'
 import { useState, useEffect } from 'react'
 

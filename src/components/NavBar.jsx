@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import navIcon1 from '../assets/images/nav-icon1.svg'
 import navIcon2 from '../assets/images/githubIcon.svg'
-import navIcon3 from '../assets/images/email.png'
 
 export default function NavBar() {
 

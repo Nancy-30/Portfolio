@@ -22,7 +22,7 @@ export default function Contact() {
                     </div>
 
                     <div className='contactIcon'>
-                        <a><img src={navIcon3} /></a>
+                        <a><img src={navIcon3} alt = "email"/></a>
                         ynancy030@gmail.com
                     </div>
 
