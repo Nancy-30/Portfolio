@@ -2,7 +2,7 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import VSCodeLogo from '../../assets/images/vs-code-logo.svg'
+import VSCodeLogo from '../../assets/images/postgresql-icon.svg'
 import GithubLogo from '../../assets/images/Github-logo.svg'
 import FigmaLogo from '../../assets/images/figma-logo.svg'
 import MySqlLogo from '../../assets/images/mysql-logo.svg'
@@ -37,7 +37,7 @@ export default function OtherTools() {
             </div>
 
             <div className='item'>
-                <img src={FigmaLogo} alt="img" />  
+                <img src={FigmaLogo} alt="img" />
                 <h5>Figma</h5>
             </div>
 
@@ -48,7 +48,7 @@ export default function OtherTools() {
 
             <div className='item'>
                 <img src={VSCodeLogo} alt="img" />
-                <h5>VS Code</h5>
+                <h5>PostgreSQL</h5>
             </div>
         </Carousel>
     )

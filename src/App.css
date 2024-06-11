@@ -253,9 +253,9 @@ span.navbar-text {
 }
 
 .banner h1 {
-  font-size: 65px;
+  font-size: 66px;
   font-weight: 700;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.9px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
@@ -322,7 +322,7 @@ span.navbar-text {
   background: #0e0d0d;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 30px 40px;
   margin-top: -60px;
   box-shadow: 5px 1px 15px #1e1d1d;
 }
