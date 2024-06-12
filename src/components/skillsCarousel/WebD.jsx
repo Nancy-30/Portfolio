@@ -5,7 +5,9 @@ import HTMLLogo from '../../assets/images/HTML-logo.svg'
 import ReactIconLogo from '../../assets/images/React-icon.svg'
 import TailwindLogo from '../../assets/images/Tailwind-logo.svg'
 import JavascriptLogo from '../../assets/images/javaScript-logo.svg'
-
+import MongoDB from "../../assets/images/mongodb.svg"
+import Nodejs from "../../assets/images/nodejs.svg"
+import Framer from "../../assets/images/framer-motion.svg"
 export default function WebD() {
 
   const responsive = {
@@ -48,6 +50,21 @@ export default function WebD() {
       <div className='item'>
         <img src={ReactIconLogo} alt="img" />
         <h5>React JS</h5>
+      </div>
+
+      <div className='item'>
+        <img src={Nodejs} alt="img" />
+        <h5>Node JS</h5>
+      </div>
+
+      <div className='item'>
+        <img src={MongoDB} alt="img" />
+        <h5>MongoDB</h5>
+      </div>
+
+      <div className='item'>
+        <img src={Framer} alt="img" />
+        <h5>Framer Motion</h5>
       </div>
     </Carousel>
   )

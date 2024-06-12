@@ -13,6 +13,7 @@ export default function Skills() {
   const handleSectionClick = (section) => {
     setActiveSection(section);
   }
+
   return (
     <section className='skill' id="skills">
       <Container>
@@ -21,18 +22,31 @@ export default function Skills() {
             <div className='skill-bx'>
               <h2>Skills</h2>
               <div className='skill-tabs'>
-                <h5 className='skills-btn' onClick={() => handleSectionClick('Web d')}>Web D</h5>
+                <h5 
+                  className={`skills-btn ${activeSection === 'Web d' ? 'skill-active' : ''}`} 
+                  onClick={() => handleSectionClick('Web d')}
+                >
+                  Web D
+                </h5>
 
-                <h5 className='skills-btn' onClick={() => handleSectionClick('DSA')}>Languages</h5>
+                <h5 
+                  className={`skills-btn ${activeSection === 'DSA' ? 'skill-active' : ''}`} 
+                  onClick={() => handleSectionClick('DSA')}
+                >
+                  Languages
+                </h5>
 
-                <h5 className='skills-btn' onClick={() => handleSectionClick('other')}>Other Tools</h5>
-
+                <h5 
+                  className={`skills-btn ${activeSection === 'other' ? 'skill-active' : ''}`} 
+                  onClick={() => handleSectionClick('other')}
+                >
+                  Other Tools
+                </h5>
               </div>
 
               {activeSection === 'Web d' && <WebD />}
               {activeSection === 'DSA' && <DSA />}
               {activeSection === 'other' && <OtherTools />}
-
             </div>
           </Col>
         </Row>

@@ -52,6 +52,13 @@
     border-radius: 40px;
   }
   
+  .skill-active{
+    color: #121212;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+
   .skill-slider {
     width: 80%;
     margin: 10px auto 0 auto;
