@@ -150,47 +150,24 @@ span.navbar-text {
 }
 
 .social-icon {
-  display: inline-block;
+  display: flex;
   margin-left: 14px;
 }
 
 .social-icon a {
-  width: 42px;
+  width: 50px;
   height: 42px;
-  background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
-  border-radius: 50%;
-  margin-right: 6px;
   align-items: center;
   justify-content: center;
-  line-height: 1;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.social-icon a::before {
-  content: "";
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  background-color: #ffffff;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 0.3s ease-in-out;
-}
-
-.social-icon a:hover::before {
-  transform: scale(1);
+  
 }
 
 .social-icon a img {
-  width: 40%;
+  width: 60%;
   z-index: 1;
-  transition: 0.3s ease-in-out;
 }
 
-.social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
-}
 
 .navbar-text button {
   font-weight: 700;
@@ -234,7 +211,7 @@ span.navbar-text {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 160px 0 100px 0;
+  padding: 140px 0 100px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -253,8 +230,8 @@ span.navbar-text {
 }
 
 .banner h1 {
-  font-size: 66px;
-  font-weight: 700;
+  font-size: 75px;
+  font-weight: 500;
   letter-spacing: 0.9px;
   line-height: 1;
   margin-bottom: 20px;
@@ -291,21 +268,12 @@ span.navbar-text {
 }
 
 .banner img {
-  animation: updown 3s linear infinite;
-}
-
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
+  height : 450px;
+  width : 450px;
+  border-radius: 50%;
+  padding: 7px; 
+  border: 3px solid #3C98A0; 
+  box-sizing: content-box;
 }
 
 .txt-rotate>.wrap {
@@ -501,6 +469,11 @@ span.navbar-text {
   .contactIcon{
     font-size: 20px;
   }
+
+  .banner img{
+    height : 300px;
+    width : 300px;
+  }
 }
 
 @media (max-width:500px) {
@@ -528,6 +501,12 @@ span.navbar-text {
     font-size: 17px;
   }
 
+  .banner img{
+    height : 300px;
+    width : 300px;
+    transform: translate(20px);
+  }
+
   .skill-bx h2 {
     font-size: 40px;
   }
@@ -550,4 +529,8 @@ span.navbar-text {
   .contactUs{
     gap:20px;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
