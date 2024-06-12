@@ -1,0 +1,35 @@
+.contact{
+    padding:10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .contactImage{
+    height:350px;
+    width: 350px;
+  }
+  
+  .contact h1{
+    margin: 20px;
+  }
+  
+  .social-icon-contact{
+    display: flex;
+  }
+  
+  .social-icon-contact a img{
+    height: 50px;
+    width: 50px;
+  }
+  
+  .contactUs{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+  }
+  
+  .contactIcon{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+  }

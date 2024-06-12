@@ -1,0 +1,66 @@
+.project{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 15px;
+  }
+  .project h2{
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .underLine{
+    height: 3px;
+    background: linear-gradient(146deg, rgba(39, 222, 191, 1) 0%, rgba(29, 122, 106, 1) 48%, rgba(19, 94, 81, 1) 88%);
+    margin-bottom: 20px;
+  }
+  .allProjects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projCard{
+    background-color: #171717;
+    padding: 10px;
+    height: 450px;
+    width: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  .projCard:hover{
+    box-shadow: 2px 2px 15px #151313;
+  }
+  
+  .projCard img{
+    height: 50%;
+    width: 94%;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .proj-txtx{
+    margin:10px;
+    width: 90%;
+    margin-top: 20px;
+  }
+  .link-btn-div{
+    width: 90%;
+    margin-top: 60px;
+  
+  }
+  
+  .project-link{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: linear-gradient(146deg, rgba(39, 222, 191, 1) 0%, rgba(29, 122, 106, 1) 48%, rgba(19, 94, 81, 1) 88%);
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  

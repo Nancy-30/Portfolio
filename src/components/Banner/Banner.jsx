@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import HeaderImg from '../assets/images/progile.jpg';
+// import HeaderImg from '../../assets/images/progile.jpg';
+import HeaderImg from '../../assets/images/profile.jpg';
+import './banner.css'
 
 export default function Banner() {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(200);  // Start with a smaller delta for better animation
+    const [delta, setDelta] = useState(200);  
     const toRotate = ["Web Developer", "AI/ML Developer", "DevOps"];
     const period = 2000;
 
