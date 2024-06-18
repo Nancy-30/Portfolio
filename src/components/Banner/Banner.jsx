@@ -1,14 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { useScroll, useTransform, motion } from 'framer-motion';
 import { Col, Container, Row } from 'react-bootstrap';
-// import HeaderImg from '../../assets/images/progile.jpg';
 import HeaderImg from '../../assets/images/profile.jpg';
 import './banner.css'
 
 export default function Banner() {
+    const targetRef = useRef();
+    const { scrollYProgress } = useScroll({
+        target: targetRef,
+        offset: ["end end", "end center"]
+    })
+
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 0])
+    const scale = useTransform(scrollYProgress, [0, 0.6], [1, 0.8]);
+
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(200);  
+    const [delta, setDelta] = useState(200);
     const toRotate = ["Web Developer", "AI/ML Developer", "DevOps"];
     const period = 2000;
 
@@ -44,19 +53,24 @@ export default function Banner() {
     };
 
     return (
-        <section className='banner' id="home">
-            <Container>
-                <Row className='align-items-center'>
-                    <Col xs={12} md={6} xl={7}>
-                        <span className='tagline'>Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm Nancy Yadav `}<span className='wrap'>{text}</span></h1>
-                        <p>I am a third year computer science student at the Indian Institute of Information Technology (IIIT) Dharwad, India. I am confident that my combination of technical skills and positive attitude will make me a valuable asset to any organization.</p>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={HeaderImg} alt='header' />
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+        <motion.section
+            style={{ opacity }}
+            ref={targetRef}
+            className='banner' id="home">
+            <motion.div style={{ scale, opacity }}>
+                <Container>
+                    <Row className='align-items-center'>
+                        <Col xs={12} md={6} xl={7}>
+                            <span className='tagline'>Welcome to my Portfolio</span>
+                            <h1>{`Hi I'm Nancy Yadav `}<span className='wrap'>{text}</span></h1>
+                            <p>I am a third year computer science student at the Indian Institute of Information Technology (IIIT) Dharwad, India. I am confident that my combination of technical skills and positive attitude will make me a valuable asset to any organization.</p>
+                        </Col>
+                        <Col xs={12} md={6} xl={5}>
+                            <img src={HeaderImg} alt='header' />
+                        </Col>
+                    </Row>
+                </Container>
+            </motion.div>
+        </motion.section>
     );
 }
