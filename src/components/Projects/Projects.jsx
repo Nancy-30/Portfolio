@@ -14,44 +14,35 @@ export default function Projects() {
     const projectsArray = [
         {
             title: "Velocity",
-            description: "Club website",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
             imgUrl: velocity,
-            link: "https://deploy-preview-25--clubvelocity.netlify.app/",
-            githubLink: "https://github.com/Velocity-IIITDWD/velocity"
+            githubLink: "https://github.com/Velocity-IIITDWD/velocity",
+            tech: ["HTML", "CSS", "Javascript", "Webpack"]
         },
 
         {
             title: "Sociovert",
-            description: "Social media website",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
             imgUrl: Sociovert,
-            link: "https://github.com/Nancy-30/Project_SocioVert",
-            githubLink: "https://github.com/Nancy-30/Project_SocioVert"
+            githubLink: "https://github.com/Nancy-30/Project_SocioVert",
+            tech: ["HTML", "CSS", "Javascript", "Webpack"]
         },
 
         {
             title: "Expense Tracker",
-            description: "Track the expenses",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
             imgUrl: financseTracker,
-            link: "https://fin-tracker-p3q7.onrender.com/login",
-            githubLink: "https://github.com/ashishlal2003/personal-finance-tracker"
+            githubLink: "https://github.com/ashishlal2003/personal-finance-tracker",
+            tech: ["HTML", "CSS", "Javascript", "Webpack"]
         },
 
         {
             title: "Feedback react App",
-            description: "Feedback App",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
             imgUrl: feedbackImg,
-            link: "https://main--phenomenal-mermaid-10cb09.netlify.app/",
-            githubLink: "https://github.com/Nancy-30/feedBack_reactProject"
+            githubLink: "https://github.com/Nancy-30/feedBack_reactProject",
+            tech: ["HTML", "CSS", "Javascript", "Webpack"]
         },
-
-        {
-            title: "University Website",
-            description: "University frontend clone",
-            imgUrl: UniversityImg,
-            link: "https://nancy-30.github.io/project-3-universityWebsite/",
-            githubLink: "https://github.com/Nancy-30/project-3-universityWebsite"
-        },
-
     ]
     return (
         <section className='project' id="project">
@@ -59,20 +50,21 @@ export default function Projects() {
                 <h2>Projects</h2>
                 <div className='underLine'></div>
             </div>
-            <Container>
-                <div className='allProjects'>
-                    {
-                        projectsArray.map((project, index) => {
-                            return (
-                                <ProjectCards
-                                    key={index}
-                                    {...project}
-                                />
-                            )
-                        })
-                    }
-                </div>
-            </Container>
+            <div className='allprojects'>
+                {projectsArray.map((project, index) => (
+                    <div key={index} className='projects'>
+                        <div className="image">
+                            <img src={project.imgUrl} alt="project img" className='projImg' />
+                        </div>
+                        <div className='projdesc'>
+                            <h4>{project.title}</h4>
+                            <p>{project.description}</p>
+                            <div>{project.tech}</div>
+                            <p>{project.githubLink}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }

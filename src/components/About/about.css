@@ -43,6 +43,8 @@
 
 .about-me{
     margin-top: 50px;
+    letter-spacing: 0.05em; 
+    line-height: 1.6
 }
 
 @media (max-width:770px) {

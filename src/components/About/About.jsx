@@ -34,9 +34,9 @@ export default function About() {
                 <motion.div
                     style={{ x, scale }}
                     className='about-me'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis nostrum voluptatibus? Ea corrupti eum est minus consectetur, nam aliquam. Explicabo harum maiores iste, sint eaque beatae est non in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis nostrum voluptatibus? Ea corrupti eum est minus consectetur, nam aliquam. Explicabo harum maiores iste, sint eaque beatae est non in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis nostrum voluptatibus? Ea corrupti eum est minus consectetur, nam aliquam. Explicabo harum maiores iste, sint eaque beatae est non in<br /><br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis nostrum voluptatibus? Ea corrupti eum est minus consectetur, nam aliquam. Explicabo harum maiores iste, sint eaque beatae est non in.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis nostrum voluptatibus? Ea corrupti eum est minus consectetur, nam aliquam. Explicabo harum maiores iste, sint eaque beatae est non in.
+                    I am a final-year BTech Computer Science student at IIIT Dharwad. My studies cover key areas in computer science like data structures, algorithms, and software engineering. I’ve also gained practical experience as an AI/ML Developer Intern at Vocab AI, where I worked on AI solutions and participated in technical meetings.
+                    <br /><br />
+                    I have developed several projects, such as an LLM Agent website and a Generative AI application called RecapAI. I enjoy using technologies like Python, Langchain, and the MERN stack to create useful applications. I have also participated in hackathons and coding competitions, achieving second place in a CSS battle and being among the Top 10 teams in the PeerlistXReplit Hackathon ’23.
                 </motion.div>
             </div>
         </motion.section>

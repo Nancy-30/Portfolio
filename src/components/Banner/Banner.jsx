@@ -63,7 +63,6 @@ export default function Banner() {
                         <Col xs={12} md={6} xl={7}>
                             <span className='tagline'>Welcome to my Portfolio</span>
                             <h1>{`Hi I'm Nancy Yadav `}<span className='wrap'>{text}</span></h1>
-                            <p>I am a third year computer science student at the Indian Institute of Information Technology (IIIT) Dharwad, India. I am confident that my combination of technical skills and positive attitude will make me a valuable asset to any organization.</p>
                         </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img src={HeaderImg} alt='header' />

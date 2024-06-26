@@ -13,14 +13,57 @@
   
   .underLine{
     height: 3px;
-    background: linear-gradient(146deg, rgba(39, 222, 191, 1) 0%, rgba(29, 122, 106, 1) 48%, rgba(19, 94, 81, 1) 88%);
     margin-bottom: 20px;
+    background-color: #bc9466;
   }
-  .allProjects{
+
+  .allprojects{
+    width: 70%;
+    margin-top: 40px;
+  }
+
+  .projects{
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap : 8px;
+    align-items: center;
+    justify-content: space-between;
   }
+
+  .image{
+    flex : 2;
+  }
+
+  .image img{
+    height: 300px;
+    width :300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .projdesc{
+    flex : 2;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .projCard{
     background-color: #171717;
     padding: 10px;
