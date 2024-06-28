@@ -1,49 +1,46 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
-import velocity from '../../assets/images/velocityImg.png'
-import Sociovert from '../../assets/images/socioverImg.png'
-import financseTracker from '../../assets/images/financeTrackerimg.png'
-import feedbackImg from '../../assets/images/feedbBackImg.png'
-import UniversityImg from '../../assets/images/universityImg.png'
+import recapAI from "../../assets/images/recapAI.png"
+import Gan from "../../assets/images/Gan_playground.png"
+import NexG from "../../assets/images/nexG.png"
+import cryptify from "../../assets/images/cryptify.png"
 import ProjectCards from './ProjectCards'
-
 import './project.css';
+
 
 export default function Projects() {
 
     const projectsArray = [
         {
-            title: "Velocity",
+            title: "GAN Playground",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
-            imgUrl: velocity,
+            imgUrl: Gan,
             githubLink: "https://github.com/Velocity-IIITDWD/velocity",
-            tech: ["HTML", "CSS", "Javascript", "Webpack"]
+            technologies: ["HTML", "CSS", "Javascript", "Webpack"]
         },
-
         {
-            title: "Sociovert",
+            title: "Recap AI",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
-            imgUrl: Sociovert,
+            imgUrl: recapAI,
             githubLink: "https://github.com/Nancy-30/Project_SocioVert",
-            tech: ["HTML", "CSS", "Javascript", "Webpack"]
+            technologies: ["HTML", "CSS", "Javascript", "Webpack"]
         },
-
         {
-            title: "Expense Tracker",
+            title: "NexG",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
-            imgUrl: financseTracker,
+            imgUrl: NexG,
             githubLink: "https://github.com/ashishlal2003/personal-finance-tracker",
-            tech: ["HTML", "CSS", "Javascript", "Webpack"]
+            technologies: ["HTML", "CSS", "Javascript", "Webpack"]
         },
 
         {
-            title: "Feedback react App",
+            title: "Cryptify library",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
-            imgUrl: feedbackImg,
+            imgUrl: cryptify,
             githubLink: "https://github.com/Nancy-30/feedBack_reactProject",
-            tech: ["HTML", "CSS", "Javascript", "Webpack"]
+            technologies: ["HTML", "CSS", "Javascript", "Webpack"]
         },
     ]
+
     return (
         <section className='project' id="project">
             <div>
@@ -59,8 +56,15 @@ export default function Projects() {
                         <div className='projdesc'>
                             <h4>{project.title}</h4>
                             <p>{project.description}</p>
-                            <div>{project.tech}</div>
-                            <p>{project.githubLink}</p>
+                            <div className='technologies'>
+                                {project.technologies.map((tech, techIndex) => (
+                                    <span key={techIndex}>{tech}</span>
+                                ))}
+                            </div>
+
+                            <button className='btn'>
+                                <a href={project.githubLink} className='githubBtn'>Github</a>
+                            </button>
                         </div>
                     </div>
                 ))}

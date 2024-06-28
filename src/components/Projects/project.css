@@ -37,16 +37,55 @@
 
   .image img{
     height: 300px;
-    width :300px;
-    object-fit: cover;
-    border-radius: 5px;
+    width :350px;
+    border-radius: 10px;
   }
 
   .projdesc{
     flex : 2;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .technologies{
+    display: flex;
+    gap : 10px;
+  }
+
+  .technologies span{
+    padding: 4px 10px;
+    background-color: #bc9466;
+    opacity: 70%;
+    border-radius: 3px;
+    font-weight: 100;
+  }
+
+  .technologies span:hover{
+    opacity: 100%;
+    cursor: pointer;
+  }
+
+  .btn{
+    width: 0% ;
+    transform: translateX(-13px);
+    margin-top: 10px;
+    opacity: 70%;
+  }
+
+  .btn:hover{
+    opacity: 100%;
   }
 
 
+  .githubBtn{
+    text-decoration: none;
+    padding: 4px 10px;
+    background-color: #bc9466;
+    color: white;
+    border-radius: 3px;
+    margin-top: 8px;
+  }
 
 
 
