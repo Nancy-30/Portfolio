@@ -6,37 +6,35 @@ import cryptify from "../../assets/images/cryptify.png"
 import ProjectCards from './ProjectCards'
 import './project.css';
 
-
 export default function Projects() {
 
     const projectsArray = [
         {
             title: "GAN Playground",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
+            description: "A dynamic playground for users to experiment with and visualize GAN models in real-time.",
             imgUrl: Gan,
-            githubLink: "https://github.com/Velocity-IIITDWD/velocity",
+            githubLink: "https://github.com/ashishlal2003/gan-playground",
             technologies: ["HTML", "CSS", "Javascript", "Webpack"]
         },
         {
             title: "Recap AI",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
+            description: "An LLM-based YouTube summarizer app built for the Peerlist X Replit hackathon, providing concise video summaries.",
             imgUrl: recapAI,
-            githubLink: "https://github.com/Nancy-30/Project_SocioVert",
+            githubLink: "https://github.com/C-NikhilKarthik/RecapAI",
             technologies: ["HTML", "CSS", "Javascript", "Webpack"]
         },
         {
             title: "NexG",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
+            description: "A frontend website showcasing top-tier design and animation skills in web development.",
             imgUrl: NexG,
-            githubLink: "https://github.com/ashishlal2003/personal-finance-tracker",
+            githubLink: "https://github.com/Nancy-30/NexG",
             technologies: ["HTML", "CSS", "Javascript", "Webpack"]
         },
-
         {
-            title: "Cryptify library",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa blanditiis veritatis aperiam maiores repellendus tempora consectetur",
+            title: "Cryptify Library",
+            description: "A simple tool to encrypt and decrypt messages directly on the website, featuring a Gemini-powered LLM assistant for cryptography queries.",
             imgUrl: cryptify,
-            githubLink: "https://github.com/Nancy-30/feedBack_reactProject",
+            githubLink: "https://github.com/ashishlal2003/crypto-lib",
             technologies: ["HTML", "CSS", "Javascript", "Webpack"]
         },
     ]
