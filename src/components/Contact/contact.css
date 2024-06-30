@@ -1,8 +1,12 @@
 .contact{
     padding:10px;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    margin-top: 20px;
   }
   .contactImage{
     height:350px;
@@ -10,26 +14,19 @@
   }
   
   .contact h1{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
     margin: 20px;
   }
   
-  .social-icon-contact{
-    display: flex;
-  }
-  
-  .social-icon-contact a img{
-    height: 50px;
-    width: 50px;
-  }
   
   .contactUs{
     display: flex;
     flex-direction: column;
-    gap:40px;
+    gap:20px;
   }
   
-  .contactIcon{
-    display: flex;
-    align-items: center;
-    font-size: 25px;
+  .contactUs h6{
+    text-decoration: underline;
+    cursor: pointer;
   }

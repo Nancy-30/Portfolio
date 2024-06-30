@@ -1,36 +1,25 @@
 import React from 'react'
 import './contact.css'
-import contactImg from '../../assets/images/contactImg.svg'
-import navIcon1 from '../../assets/images/nav-icon1.svg'
+
+import navIcon3 from '../../assets/images/gmail-icon.svg'
+import navIcon1 from '../../assets/images/linkedin-icon.svg'
 import navIcon2 from '../../assets/images/githubIcon.svg'
-import navIcon3 from "../../assets/images/email.png"
 
 export default function Contact() {
     return (
         <section className='contact' id='connect'>
-            <img src={contactImg} alt="contact us" className='contactImage' />
-            <div>
-                <h1>Contact</h1>
-                <div className='social-icon contactUs'>
-                    <div className='contactIcon'>
-                        <a href='https://www.linkedin.com/in/nancyadav30/'><img src={navIcon1} alt="linkedin" /></a>
-                        Linkedin
-                    </div>
 
-                    <div className='contactIcon'>
-                        <a href='https://github.com/Nancy-30' ><img src={navIcon2} alt="github" /></a>
-                        Github
-                    </div>
-
-                    <div className='contactIcon'>
-                        <a><img src={navIcon3} alt = "email"/></a>
-                        ynancy030@gmail.com
-                    </div>
-
-
+            <h1>Contact</h1>
+            <div className='contactUs'>
+                <h6>ynancy030@gmail.com</h6>
+                <div className='social-icon'>
+                    <a href='https://www.linkedin.com/in/nancyadav30/'><img src={navIcon1} alt="linkedin" /></a>
+                    <a href='https://github.com/Nancy-30' id='github-icon'><img src={navIcon2} alt="github" /></a>
+                    <a href='mailto:ynancy030@gmail.com' id='github-icon'><img src={navIcon3} alt="github" /></a>
                 </div>
-
             </div>
+
+
 
 
         </section>

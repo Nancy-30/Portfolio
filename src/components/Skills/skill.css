@@ -70,3 +70,9 @@
     width: 30%;
     margin: 0 auto 15px auto;
   }
+
+  @media (max-width : 500px){
+    .skill{
+      transform: translateX(45px);
+    }
+  }
