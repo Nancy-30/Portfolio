@@ -1,24 +1,20 @@
-import React, { useRef } from 'react';
-import { useScroll, useTransform, motion } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import './education.css';
 import Dotsvg from "../../assets/images/dot-svg.svg";
 
 export default function Education() {
-    const targetRef = useRef();
-    const { scrollYProgress } = useScroll({
-        target: targetRef,
-        offset: ["start end", "end center"]
-    })
 
-    const scale = useTransform(scrollYProgress, [0.1, 0.7, 1], [0.5, 1.4, 1])
-    const x = useTransform(scrollYProgress, [0.1, 0.25, 0.5, 0.6], ["60%", "55%", "-25%", "20%"]);
-    const opacity = useTransform(scrollYProgress, [0.9, 1], [1, 0]);
 
     return (
-        <motion.div className="edu-main">
+        <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 2 }}
+            className="edu-main">
 
             <div className="edu-container left-div">
-            <img src = {Dotsvg} alt='dot'/>
+                <img src={Dotsvg} alt='dot' />
                 <div className="text-box">
                     <h4>Vocab.ai</h4>
                     <small className='time-intern'>
@@ -34,7 +30,7 @@ export default function Education() {
             </div>
 
             <div className="edu-container left-div">
-                <img src = {Dotsvg}/>
+                <img src={Dotsvg} alt='dot' />
                 <div className="text-box">
                     <h4>Velocity - (IIT Dharwad)</h4>
                     <small className='time-intern'>

@@ -61,11 +61,26 @@ export default function Banner() {
                 <Container>
                     <Row className='align-items-center'>
                         <Col xs={12} md={6} xl={7}>
-                            <span className='tagline'>Welcome to my Portfolio</span>
-                            <h1>{`Hi I'm Nancy Yadav `}<span className='wrap'>{text}</span></h1>
+                            <motion.span
+                                whileInView={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, y: -100 }}
+                                transition={{ duration: 1 }}
+                                className='tagline'>Welcome to my Portfolio</motion.span>
+                            <motion.h1
+                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, x: -100 }}
+                                transition={{ duration: 1 }}
+                            >{`Hi I'm Nancy Yadav `}<span>{text}</span></motion.h1>
                         </Col>
                         <Col xs={12} md={6} xl={5}>
-                            <img src={HeaderImg} alt='header' />
+                            <motion.div
+                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, x: 100 }}
+                                transition={{ duration: 1 }}
+                            >
+                                <img src={HeaderImg} alt='header' />
+                            </motion.div>
+
                         </Col>
                     </Row>
                 </Container>

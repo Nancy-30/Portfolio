@@ -26,13 +26,6 @@
     }
 }
 
-.edu-container:nth-child(1){
-    animation-delay: 1s;
-}
-
-.edu-container:nth-child(2){
-    animation-delay: 2s;
-}
 
 .text-box{
     padding: 5px 0;
