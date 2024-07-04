@@ -6,7 +6,6 @@ import NexG from "../../assets/images/nexG.png"
 import cryptify from "../../assets/images/cryptify.png"
 import './project.css';
 
-
 export default function Projects() {
 
     const projectsArray = [
@@ -31,7 +30,6 @@ export default function Projects() {
             githubLink: "https://github.com/Nancy-30/NexG",
             technologies: ["Reactjs", "Framer Motion", "Tailwindcss"]
         },
-
         {
             title: "Cryptify library",
             description: "An academic project in cryptography featuring various algorithms like AES, DES, 3DES to encrypt and decrypt messages using a secret key.",

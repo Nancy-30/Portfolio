@@ -27,9 +27,11 @@ export default function About() {
                     initial={{ opacity: 0, x: -100 }}
                     transition={{ duration: 0.5 }}
                     className='about-me'>
-                    I am a final-year BTech Computer Science student at IIIT Dharwad. My studies cover key areas in computer science like data structures, algorithms, and software engineering. I’ve also gained practical experience as an AI/ML Developer Intern at Vocab AI, where I worked on AI solutions and participated in technical meetings.
+                    I am a final-year BTech Computer Science student at IIIT Dharwad, specializing in full stack development and machine learning. As an AI/ML Developer Intern at Vocab AI, I developed AI solutions and participated in technical meetings.
                     <br /><br />
-                    I have developed several projects, such as an LLM Agent website and a Generative AI application called RecapAI. I enjoy using technologies like Python, Langchain, and the MERN stack to create useful applications. I have also participated in hackathons and coding competitions, achieving second place in a CSS battle and being among the Top 10 teams in the PeerlistXReplit Hackathon ’23.
+                    I have built several projects, including an LLM Agent website and RecapAI, a Generative AI application. My tech stack includes Python, Langchain, and the MERN stack, allowing me to create robust web applications and AI models. 
+                    <br /><br />
+                    I actively participate in hackathons and coding competitions, achieving second place in a CSS battle and ranking in the Top 10 at the PeerlistXReplit Hackathon ’23. I enjoy tackling complex problems and collaborating with others to create innovative solutions.
                 </motion.div>
             </div>
         </section>
