@@ -4,6 +4,8 @@ import recapAI from "../../assets/images/recapAI.png"
 import Gan from "../../assets/images/Gan_playground.png"
 import NexG from "../../assets/images/nexG.png"
 import cryptify from "../../assets/images/cryptify.png"
+import Sociovert from "../../assets/images/socioverImg.png";
+import chatbot from "../../assets/images/chat_bot.png";
 import './project.css';
 
 export default function Projects() {
@@ -36,6 +38,20 @@ export default function Projects() {
             imgUrl: cryptify,
             githubLink: "https://github.com/ashishlal2003/crypto-lib",
             technologies: ["MERN", "Tailwindcss", "Crypto Algos"]
+        },
+        {
+            title: "Sociovert",
+            description: "The platform serves as a digital hub, bringing together individuals who share common interests and passions, fostering connections and relationships among like-minded people",
+            imgUrl: Sociovert,
+            githubLink: "https://github.com/Santhosh642003/SocioVert",
+            technologies: ["MERN", "Tailwindcss", "Socket.io"]
+        },
+        {
+            title: "Chat Application",
+            description: "A responsive Chat Application developed using Socket programing and hosted for real time chatting",
+            imgUrl: chatbot,
+            githubLink: "https://github.com/ashishlal2003/chai-pe-charcha",
+            technologies: ["MERN", "Tailwindcss", "Socket.io", "GCP"]
         },
     ]
 

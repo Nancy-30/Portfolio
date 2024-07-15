@@ -4,6 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import WebD from '../skillsCarousel/WebD';
 import DSA from '../skillsCarousel/DSA';
 import OtherTools from '../skillsCarousel/OtherTools';
+import Technologies from '../skillsCarousel/Technologies';
+
 import './skill.css';
 
 export default function Skills() {
@@ -42,11 +44,19 @@ export default function Skills() {
                 >
                   Other Tools
                 </h5>
+
+                <h5 
+                  className={`skills-btn ${activeSection === 'tech' ? 'skill-active' : ''}`} 
+                  onClick={() => handleSectionClick('tech')}
+                >
+                  Technologies
+                </h5>
               </div>
 
               {activeSection === 'Web d' && <WebD />}
               {activeSection === 'DSA' && <DSA />}
               {activeSection === 'other' && <OtherTools />}
+              {activeSection === 'tech' && <Technologies />}
             </div>
           </Col>
         </Row>
